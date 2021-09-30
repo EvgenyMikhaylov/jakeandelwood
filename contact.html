@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head><link rel="stylesheet" href="normalize.css">
+        <title>Jake & Elwood</title>
+        <!-- viewport meta to render pages on mobile properly -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- link to google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+        
+        <!-- https://cdnjs.com/libraries/font-awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" rel="stylesheet">
+        
+        <!-- link to my CSS -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+     <body>
+        <header class="page-header main-grid">
+            <div class="page-header__content">
+                <a class="page-header__logo-link" href="index.html">
+                    <img src="img/logo.png" alt="">
+                </a>
+                <button aria-label="Open navigation" class="page-header__open-nav">&#9776;</button>
+
+                <nav class="page-header__nav"> 
+                    <button aria-label="Close navigation" class="page-header__close-nav">&times;</button>
+                    <ul class="page-header__nav-list">
+                        <li class="page-header__nav-item"><a href="index.html" class="page-header__nav-link">Главная</a></li>
+                        <li class="page-header__nav-item"><a href="about.html" class="page-header__nav-link">О нас</a></li>
+                        <li class="page-header__nav-item"><a href="contact.html" class="page-header__nav-link current">Обратная связь</a></li>
+                    </ul>
+                </nav>
+                
+                
+            </div>
+        </header>
+        
+        <main class="main-template main-grid">
+            
+            <h1 class="page-title">Обратная связь</h1>
+            <p class="subtitle">Дайте нам знать, как мы можем вам помочь, и на следующий день мы приедем к вам на нашем Блюзмобиле, чтобы обсудить детали.</p>
+            
+            <img class="main-image" src="img/contact.jpg" alt="a bunch of mailboxes">
+            <div class="secondary-text">
+                <h2 class="section-title">Связаться с нами</h2>
+                <p>Вы можете использовать форму или отправить нам письмо. Я свяжусь с вами как можно скорее!</p>
+            </div>
+                        
+            <div class="main-text">
+                <form class="contact-form" action="#" method="POST">
+                    
+                    <label class="contact-form__fname-label" for="fname">Имя</label>
+                    <input class="contact-form__fname-input" id="fname" type="text">
+                    
+                    <label class="contact-form__lname-label" for="lname">Фамилия</label>
+                    <input class="contact-form__lname-input" id="lname" type="text">
+                    
+                    <label class="contact-form__message-label" for="message">Сообщение</label>
+                    <textarea class="contact-form__message-textarea" id="message"></textarea>
+                    
+                    <button class="btn btn-primary contact-form__btn-form">Отправить</button>
+                </form>
+            </div>
+            
+        
+        </main>
+        
+        <footer class="page-footer main-grid">
+            <div class="page-footer__main">
+                <img src="img/logo.png" alt="" class="page-footer__logo">
+                <p class="page-footer__footer-text">Два брата из Чикаго, которые просто пытаются погасить свои долги, помогая другим с их потребностями в SEO, SEM и контент-маркетинге.</p>
+                <p class="page-footer__footer-fineprint">© Jake&Elwood 2020</p>
+            </div>
+            <ul class="page-footer__social-list">
+                <li class="page-footer__social-item"><a href="#" class="page-footer__social-link"><i class="fab fa-facebook-square"></i></a></li>
+                <li class="page-footer__social-item"><a href="#" class="page-footer__social-link"><i class="fab fa-twitter"></i></a></li>
+                <li class="page-footer__social-item"><a href="#" class="page-footer__social-link"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </footer>
+        
+        
+        <script src="script.js"></script>
+    </body>
+</html>
